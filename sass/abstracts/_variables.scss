@@ -1,0 +1,24 @@
+
+:root {
+  // COLORS
+  --black: #000;
+  --white: #fff;
+
+  // FONTS
+  --font-primary: sans-serif;
+}
+
+// COLOR SCHEME SPECIFIC VARIABLES
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-font-primary: var(--black);
+    --color-background: var(--white);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-font-primary: var(--white);
+    --color-background: var(--black);
+  }
+}

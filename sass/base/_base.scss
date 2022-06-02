@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: 'kern';
+  text-rendering: optimizeLegibility !important;
+  color: var(--color-font-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  all: unset;
+  background: inherit;
+  cursor: pointer;
+
+  &::-moz-focus-inner { border: 0; }
+}
+
+input {
+  border: none;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+
+  &:focus { outline: none; }
+}
